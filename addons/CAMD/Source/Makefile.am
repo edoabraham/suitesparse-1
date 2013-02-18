@@ -1,8 +1,8 @@
-AM_CPPFLAGS = -I$(top_srcdir)/Include @SUITESPARSECONFIG_CFLAGS@
+AM_CPPFLAGS = -I$(srcdir)/../Include @SUITESPARSECONFIG_CFLAGS@
 
 CAMDSRC = \
-	$(top_srcdir)/Include/camd_internal.h \
-	$(top_srcdir)/Include/camd.h \
+	$(srcdir)/../Include/camd_internal.h \
+	$(srcdir)/../Include/camd.h \
 	camd_1.c \
 	camd_2.c \
 	camd_aat.c \

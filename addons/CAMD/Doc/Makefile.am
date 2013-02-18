@@ -1,7 +1,7 @@
 
 CAMD_UserGuide.pdf:
 	echo '\begin{verbatim}' > camd_h.tex
-	expand -8 $(top_srcdir)/Include/camd.h >> camd_h.tex
+	expand -8 $(srcdir)/../Include/camd.h >> camd_h.tex
 	echo '\end{verbatim}' >> camd_h.tex
 	ln -s $(srcdir)/*.{tex,bib} .
 	$(PDFLATEX) CAMD_UserGuide
