@@ -7,8 +7,7 @@ DISTCHECK_CONFIGURE_FLAGS = \
 	--with-cholesky \
 	--with-matrixops \
 	--with-modify \
-	--with-supernodal \
-	--with-doc
+	--with-supernodal
 
 EXTRA_SUBDIRS=
 EXTRA_LIBADD=

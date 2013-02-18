@@ -4,10 +4,7 @@ include $(top_srcdir)/config/common.am
 
 DISTCHECK_CONFIGURE_FLAGS = \
 	--enable-expert \
-	--enable-timing \
-	--with-doc \
-	--with-partition \
-	--with-tbb
+	--enable-timing
 
 SUBDIRS = Source Demo Doc
 
