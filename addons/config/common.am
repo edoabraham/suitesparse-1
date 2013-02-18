@@ -1,6 +1,6 @@
 
 pkgconfigdir = $(libdir)/pkgconfig
-pkgconfig_DATA = $(PACKAGE_NAME).pc
+pkgconfig_DATA = $(top_builddir)/$(PACKAGE_NAME).pc
 
 EXTRA_DIST = README.txt
 

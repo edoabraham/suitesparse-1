@@ -1,8 +1,8 @@
-AM_CPPFLAGS = -I$(top_srcdir)/Include @SUITESPARSECONFIG_CFLAGS@
+AM_CPPFLAGS = -I$(srcdir)/../Include @SUITESPARSECONFIG_CFLAGS@
 
 AMDSRC = \
-	$(top_srcdir)/Include/amd_internal.h \
-	$(top_srcdir)/Include/amd.h \
+	$(srcdir)/../Include/amd_internal.h \
+	$(srcdir)/../Include/amd.h \
 	amd_1.c \
 	amd_2.c \
 	amd_aat.c \

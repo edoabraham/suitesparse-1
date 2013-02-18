@@ -1,0 +1,12 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+
+Name: @PACKAGE_NAME@
+Description: Single build for all packages in SuiteSparse
+Version: @PACKAGE_VERSION@
+URL: http://www.cise.ufl.edu/research/sparse/
+Libs: -L${libdir} -lsuitesparse
+Libs.private:
+Cflags: -I${includedir}
