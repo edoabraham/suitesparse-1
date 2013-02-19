@@ -27,9 +27,6 @@ AC_CHECK_LIB([m], [sqrt])
 #AC_CHECK_LIB([pthread], [])
 AC_CHECK_LIB([rt], [clock_gettime])
 
-# Optional documentation
-AX_SUITESPARSE_DOC
-
 # Optional printing
 AC_ARG_ENABLE(print,
     [AC_HELP_STRING([--disable-print],

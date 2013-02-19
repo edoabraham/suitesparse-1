@@ -11,9 +11,6 @@ AC_FUNC_MALLOC
 # Checks and automatically links with required system libraries
 AC_CHECK_LIB([m], [pow])
 
-# Optional documentation
-AX_SUITESPARSE_DOC
-
 AC_PROG_F77
 AC_F77_LIBRARY_LDFLAGS
 PKG_CHECK_MODULES([BLAS],

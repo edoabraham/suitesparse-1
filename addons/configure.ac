@@ -13,12 +13,10 @@ m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES(yes)])
 LT_INIT
 AC_PROG_CC
 
-# Checks for header files
-AC_CHECK_HEADERS([limits.h stdlib.h])
+AC_LANG([C])
 
-# Checks for typedefs, structures, and compiler characteristics
-AC_TYPE_SIZE_T
-AC_FUNC_MALLOC
+# Optional documentation
+AX_SUITESPARSE_DOC
 
 SUITESPARSE_CONFIG
 SUITESPARSE_AMD

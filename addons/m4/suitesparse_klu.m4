@@ -14,9 +14,6 @@ AC_FUNC_REALLOC
 # Checks and automatically links with required system libraries
 AC_CHECK_LIB([m], [sqrt])
 
-# Optional documentation
-AX_SUITESPARSE_DOC
-
 # Optional cholmod (only used in test)
 AC_ARG_WITH(cholmod,
     [AC_HELP_STRING([--with-cholmod],

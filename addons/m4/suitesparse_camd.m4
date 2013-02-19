@@ -10,9 +10,6 @@ AC_FUNC_ERROR_AT_LINE
 # Checks and automatically links with required system libraries
 AC_CHECK_LIB([m], [sqrt])
 
-# Optional documentation
-AX_SUITESPARSE_DOC
-
 AC_CONFIG_FILES([CAMD/Demo/Makefile
                  CAMD/Doc/Makefile
                  CAMD/Source/Makefile

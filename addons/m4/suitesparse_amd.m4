@@ -10,9 +10,6 @@ AC_FUNC_ERROR_AT_LINE
 # Checks and automatically links with required system libraries
 AC_CHECK_LIB([m], [sqrt])
 
-# Optional documentation
-AX_SUITESPARSE_DOC
-
 # Optional fortran library
 AC_MSG_CHECKING([whether to enable fortran interface])
 AC_ARG_ENABLE([fortran],
@@ -39,5 +36,8 @@ AMD_CFLAGS="-I\$(top_builddir)/AMD/Include"
 AMD_LIBS="\$(top_builddir)/AMD/Source/libamd.la"
 AC_SUBST(AMD_CFLAGS)
 AC_SUBST(AMD_LIBS)
+
+# Optional AMD ordering (only used in test)
+AM_CONDITIONAL([WITH_AMD], [test 1 = 1])
 
 ])
