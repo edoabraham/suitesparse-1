@@ -2,7 +2,7 @@ AM_CPPFLAGS = -I$(srcdir)/../Include @SUITESPARSECONFIG_CFLAGS@
 
 check_PROGRAMS = RBdemo
 
-LDADD = $(top_builddir)/Source/librbio.la
+LDADD = $(builddir)/../Source/librbio.la
 
 check-am: $(check_PROGRAMS)
 	./RBdemo < $(top_srcdir)/RBio/private/west0479.rua

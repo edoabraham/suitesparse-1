@@ -2,6 +2,7 @@ AM_CPPFLAGS = -I$(srcdir)/../Include @SUITESPARSECONFIG_CFLAGS@
 
 check_PROGRAMS = amd_simple amd_demo amd_demo2 amd_l_demo
 
+LDADD = $(builddir)/../Source/libamd.la
 include $(top_srcdir)/config/check.am
 
 if ENABLE_FORTRAN

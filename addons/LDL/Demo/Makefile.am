@@ -1,6 +1,6 @@
 AM_CPPFLAGS = -I$(srcdir)/../Include @SUITESPARSECONFIG_CFLAGS@
 
-LDADD = $(top_builddir)/Source/lib$(PACKAGE_NAME).la
+LDADD = $(builddir)/../Source/libldl.la
 
 if WITH_AMD
 EXTRA_PROGRAMS = ldlamd ldllamd

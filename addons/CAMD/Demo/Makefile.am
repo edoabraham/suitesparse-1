@@ -2,5 +2,7 @@ AM_CPPFLAGS = -I$(srcdir)/../Include @SUITESPARSECONFIG_CFLAGS@
 
 check_PROGRAMS = camd_simple camd_demo camd_demo2 camd_l_demo
 
+LDADD = $(builddir)/../Source/libcamd.la
+
 include $(top_srcdir)/config/check.am
 

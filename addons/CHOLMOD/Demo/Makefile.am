@@ -7,7 +7,7 @@ AM_CPPFLAGS = -I$(srcdir)/../Include @SUITESPARSECONFIG_CFLAGS@
 noinst_HEADERS = cholmod_demo.h
 check_PROGRAMS = cholmod_demo cholmod_l_demo cholmod_simple
 
-LDADD = $(top_builddir)/libcholmod.la
+LDADD = $(builddir)/../libcholmod.la
 
 check-local:
 	./cholmod_demo < $(srcdir)/Matrix/bcsstk01.tri || exit 1

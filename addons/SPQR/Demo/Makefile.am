@@ -1,6 +1,6 @@
 AM_CPPFLAGS = -I$(srcdir)/../Include @SUITESPARSECONFIG_CFLAGS@
 
-LDADD = $(top_builddir)/Source/libspqr.la @SUITESPARSECONFIG_LIBS@
+LDADD = $(builddir)/../Source/libspqr.la @SUITESPARSECONFIG_LIBS@
 
 check_PROGRAMS = \
 	qrsimple \

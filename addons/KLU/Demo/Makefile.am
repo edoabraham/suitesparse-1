@@ -1,7 +1,7 @@
 AM_CPPFLAGS = -I$(srcdir)/../Include @SUITESPARSECONFIG_CFLAGS@ \
 	@BTF_CFLAGS@ @AMD_CFLAGS@ @COLAMD_CFLAGS@
 
-LDADD = $(top_builddir)/Source/libklu.la
+LDADD = $(builddir)/../Source/libklu.la
 
 check_PROGRAMS = klu_simple
 

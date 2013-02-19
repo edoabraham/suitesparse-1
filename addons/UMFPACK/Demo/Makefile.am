@@ -1,7 +1,7 @@
 AM_CPPFLAGS = -I$(srcdir)/../Include \
 	@SUITESPARSECONFIG_CFLAGS@ @AMD_CFLAGS@ @CHOLMOD_CFLAGS@
 
-LDADD = $(top_builddir)/Source/lib$(PACKAGE_NAME).la
+LDADD = $(builddir)/../Source/libumfpack.la
 
 ext=dat
 

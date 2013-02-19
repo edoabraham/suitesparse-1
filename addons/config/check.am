@@ -1,5 +1,3 @@
-LDADD = $(top_builddir)/Source/lib$(PACKAGE_NAME).la
-
 # we cange the .out extension because
 # it creates conflicts in automake binaries
 # TODO: find a way for automake to not mess with the .out extensions
