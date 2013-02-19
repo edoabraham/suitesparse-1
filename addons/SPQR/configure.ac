@@ -18,7 +18,7 @@ AC_CHECK_HEADERS([float.h string.h stdlib.h])
 
 # Checks for typedefs, structures, and compiler characteristics.
 AC_TYPE_SIZE_T
-AC_CHECK_HEADER_STDBOOL
+#AC_CHECK_HEADER_STDBOOL
 AC_C_INLINE
 AC_TYPE_SIZE_T
 AC_FUNC_ERROR_AT_LINE
