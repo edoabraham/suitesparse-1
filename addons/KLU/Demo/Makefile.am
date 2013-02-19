@@ -1,4 +1,4 @@
-AM_CPPFLAGS = -I$(top_srcdir)/Include @SUITESPARSECONFIG_CFLAGS@ \
+AM_CPPFLAGS = -I$(srcdir)/../Include @SUITESPARSECONFIG_CFLAGS@ \
 	@BTF_CFLAGS@ @AMD_CFLAGS@ @COLAMD_CFLAGS@
 
 LDADD = $(top_builddir)/Source/libklu.la

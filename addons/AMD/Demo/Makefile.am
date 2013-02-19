@@ -1,4 +1,4 @@
-AM_CPPFLAGS = -I$(top_srcdir)/Include @SUITESPARSECONFIG_CFLAGS@
+AM_CPPFLAGS = -I$(srcdir)/../Include @SUITESPARSECONFIG_CFLAGS@
 
 check_PROGRAMS = amd_simple amd_demo amd_demo2 amd_l_demo
 

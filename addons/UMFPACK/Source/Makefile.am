@@ -1,4 +1,4 @@
-AM_CPPFLAGS = -I$(top_srcdir)/Include \
+AM_CPPFLAGS = -I$(srcdir)/../Include \
 	@SUITESPARSECONFIG_CFLAGS@ @AMD_CFLAGS@ @CHOLMOD_CFLAGS@
 
 noinst_HEADERS = \

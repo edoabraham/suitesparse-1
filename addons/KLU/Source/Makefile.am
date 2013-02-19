@@ -1,4 +1,4 @@
-AM_CPPFLAGS = -I$(top_srcdir)/Include \
+AM_CPPFLAGS = -I$(srcdir)/../Include \
 	@SUITESPARSECONFIG_CFLAGS@ @AMD_CFLAGS@ @COLAMD_CFLAGS@ @BTF_CFLAGS@
 
 noinst_LTLIBRARIES = libklud.la libkluz.la libklul.la libkluzl.la

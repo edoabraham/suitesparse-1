@@ -1,4 +1,4 @@
-AM_CPPFLAGS = -I$(top_srcdir)/Include \
+AM_CPPFLAGS = -I$(srcdir)/../Include \
 	@SUITESPARSECONFIG_CFLAGS@ @AMD_CFLAGS@ @COLAMD_CFLAGS@ 
 
 noinst_LTLIBRARIES = libcholesky.la libcholeskyl.la

@@ -1,4 +1,4 @@
-AM_CPPFLAGS = -I$(top_srcdir)/Include @SUITESPARSECONFIG_CFLAGS@
+AM_CPPFLAGS = -I$(srcdir)/../Include @SUITESPARSECONFIG_CFLAGS@
 
 check_PROGRAMS = ccolamd_example ccolamd_l_example
 ccolamd_l_example_CPPFLAGS = $(AM_CPPFLAGS) -DDLONG

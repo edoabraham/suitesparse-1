@@ -1,8 +1,8 @@
-AM_CPPFLAGS = -I$(top_srcdir)/Include @SUITESPARSECONFIG_CFLAGS@
+AM_CPPFLAGS = -I$(srcdir)/../Include @SUITESPARSECONFIG_CFLAGS@
 
 BTFSRC = \
-	$(top_srcdir)/Include/btf_internal.h \
-	$(top_srcdir)/Include/btf.h \
+	$(srcdir)/../Include/btf_internal.h \
+	$(srcdir)/../Include/btf.h \
 	btf_order.c \
 	btf_maxtrans.c \
 	btf_strongcomp.c

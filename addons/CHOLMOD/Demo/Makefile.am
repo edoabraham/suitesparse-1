@@ -3,7 +3,7 @@ if WITH_CHECK
 if WITH_MATRIXOPS
 if WITH_SUPERNODAL
 
-AM_CPPFLAGS = -I$(top_srcdir)/Include @SUITESPARSECONFIG_CFLAGS@
+AM_CPPFLAGS = -I$(srcdir)/../Include @SUITESPARSECONFIG_CFLAGS@
 noinst_HEADERS = cholmod_demo.h
 check_PROGRAMS = cholmod_demo cholmod_l_demo cholmod_simple
 

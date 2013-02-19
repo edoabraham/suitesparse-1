@@ -1,4 +1,4 @@
-AM_CPPFLAGS = -I$(top_srcdir)/Include @SUITESPARSECONFIG_CFLAGS@
+AM_CPPFLAGS = -I$(srcdir)/../Include @SUITESPARSECONFIG_CFLAGS@
 
 noinst_LTLIBRARIES = libmodify.la libmodifyl.la
 noinst_HEADERS = \

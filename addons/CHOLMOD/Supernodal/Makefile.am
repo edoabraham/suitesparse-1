@@ -1,4 +1,4 @@
-AM_CPPFLAGS = -I$(top_srcdir)/Include @SUITESPARSECONFIG_CFLAGS@ 
+AM_CPPFLAGS = -I$(srcdir)/../Include @SUITESPARSECONFIG_CFLAGS@ 
 
 noinst_LTLIBRARIES = libsupernodal.la libsupernodall.la
 noinst_HEADERS = \

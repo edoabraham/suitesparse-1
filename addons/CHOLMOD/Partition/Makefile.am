@@ -1,4 +1,4 @@
-AM_CPPFLAGS = -I$(top_srcdir)/Include @SUITESPARSECONFIG_CFLAGS@ \
+AM_CPPFLAGS = -I$(srcdir)/../Include @SUITESPARSECONFIG_CFLAGS@ \
 	@METIS_CFLAGS@ @CAMD_CFLAGS@ @CCOLAMD_CFLAGS@
 
 noinst_LTLIBRARIES = libpartition.la libpartitionl.la

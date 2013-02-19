@@ -1,4 +1,4 @@
-AM_CPPFLAGS = -I$(top_srcdir)/Include @SUITESPARSECONFIG_CFLAGS@
+AM_CPPFLAGS = -I$(srcdir)/../Include @SUITESPARSECONFIG_CFLAGS@
 
 noinst_LTLIBRARIES = libmatrixops.la libmatrixopsl.la
 noinst_HEADERS = t_cholmod_sdmult.c

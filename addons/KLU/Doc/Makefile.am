@@ -1,7 +1,7 @@
 
 KLU_UserGuide.pdf:
 	echo '\begin{verbatim}' > klu_h.tex
-	expand -8 $(top_srcdir)/Include/klu.h >> klu_h.tex
+	expand -8 $(srcdir)/../Include/klu.h >> klu_h.tex
 	echo '\end{verbatim}' >> klu_h.tex
 	echo '\begin{verbatim}' > btf_h.tex
 	echo 'See your btf.h local install' >> btf_h.tex

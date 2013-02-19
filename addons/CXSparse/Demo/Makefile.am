@@ -1,4 +1,4 @@
-AM_CPPFLAGS = -I$(top_srcdir)/Include @SUITESPARSECONFIG_CFLAGS@
+AM_CPPFLAGS = -I$(srcdir)/../Include @SUITESPARSECONFIG_CFLAGS@
 
 LDADD = $(top_builddir)/Source/libcxsparse.la
 noinst_HEADERS = cs_demo.h cs_ci_demo.h cs_di_demo.h cs_cl_demo.h cs_dl_demo.h
