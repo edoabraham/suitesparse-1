@@ -1,5 +1,7 @@
 AC_DEFUN([SUITESPARSE_CHOLMOD],
 [
+AC_CONFIG_HEADERS([CHOLMOD/Include/cholmod_config.h])
+
 # Checks for header files.
 AC_CHECK_HEADERS([float.h limits.h stddef.h stdlib.h string.h])
 
