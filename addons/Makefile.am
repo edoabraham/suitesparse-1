@@ -8,7 +8,8 @@ SUBDIRS = \
       AMD \
       COLAMD \
       CAMD \
-      CCOLAMD 
+      CCOLAMD \
+      CXSparse
 
 lib_LTLIBRARIES = libsuitesparse.la
 
