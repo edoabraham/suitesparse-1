@@ -5,7 +5,7 @@ check_PROGRAMS = RBdemo
 LDADD = $(builddir)/../Source/librbio.la
 
 check-am: $(check_PROGRAMS)
-	./RBdemo < $(top_srcdir)/RBio/private/west0479.rua
+	./RBdemo < $(srcdir)/../RBio/private/west0479.rua
 
 CLEANFILES = *.rb
 MAINTAINERCLEANFILES = Makefile.in

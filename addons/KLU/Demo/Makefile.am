@@ -13,18 +13,18 @@ kluldemo_CPPFLAGS = $(kludemo_CPPFLAGS)
 kluldemo_LDADD = $(kludemo_LDADD)
 
 check-am: $(check_PROGRAMS)
-	 ./kludemo < $(top_srcdir)/Matrix/1c.mtx
-	 ./kludemo < $(top_srcdir)/Matrix/arrowc.mtx
-	 ./kludemo < $(top_srcdir)/Matrix/arrow.mtx
-	 ./kludemo < $(top_srcdir)/Matrix/impcol_a.mtx
-	 ./kludemo < $(top_srcdir)/Matrix/w156.mtx
-	 ./kludemo < $(top_srcdir)/Matrix/ctina.mtx
-	 ./kluldemo < $(top_srcdir)/Matrix/1c.mtx
-	 ./kluldemo < $(top_srcdir)/Matrix/arrowc.mtx
-	 ./kluldemo < $(top_srcdir)/Matrix/arrow.mtx
-	 ./kluldemo < $(top_srcdir)/Matrix/impcol_a.mtx
-	 ./kluldemo < $(top_srcdir)/Matrix/w156.mtx
-	 ./kluldemo < $(top_srcdir)/Matrix/ctina.mtx
+	 ./kludemo < $(srcdir)/../Matrix/1c.mtx
+	 ./kludemo < $(srcdir)/../Matrix/arrowc.mtx
+	 ./kludemo < $(srcdir)/../Matrix/arrow.mtx
+	 ./kludemo < $(srcdir)/../Matrix/impcol_a.mtx
+	 ./kludemo < $(srcdir)/../Matrix/w156.mtx
+	 ./kludemo < $(srcdir)/../Matrix/ctina.mtx
+	 ./kluldemo < $(srcdir)/../Matrix/1c.mtx
+	 ./kluldemo < $(srcdir)/../Matrix/arrowc.mtx
+	 ./kluldemo < $(srcdir)/../Matrix/arrow.mtx
+	 ./kluldemo < $(srcdir)/../Matrix/impcol_a.mtx
+	 ./kluldemo < $(srcdir)/../Matrix/w156.mtx
+	 ./kluldemo < $(srcdir)/../Matrix/ctina.mtx
 else
 TESTS = klu_simple
 endif
