@@ -18,7 +18,7 @@ AC_DEFUN([SUITESPARSE_CONFIG],
   AC_CONFIG_FILES([SuiteSparse_config/Makefile
   		   SuiteSparse_config/suitesparseconfig.pc])
 
-  SUITESPARSECONFIG_CFLAGS=""
+  SUITESPARSECONFIG_CFLAGS="-I\$(top_builddir)/SuiteSparse_config"
   SUITESPARSECONFIG_LIBS="\$(top_builddir)/SuiteSparse_config/libsuitesparseconfig.la"
   AC_SUBST(SUITESPARSECONFIG_CFLAGS)
   AC_SUBST(SUITESPARSECONFIG_LIBS)
