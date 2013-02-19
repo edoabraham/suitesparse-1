@@ -9,7 +9,15 @@ SUBDIRS = \
       COLAMD \
       CAMD \
       CCOLAMD \
-      CXSparse
+      CXSparse \
+      RBio \
+      LDL \
+      BTF \
+      CHOLMOD \
+      KLU \
+      SPQR \
+      UMFPACK 
+
 
 lib_LTLIBRARIES = libsuitesparse.la
 
