@@ -28,7 +28,7 @@ AC_CONFIG_FILES([KLU/Demo/Makefile
 		 KLU/klu.pc
                  KLU/Makefile])
 		 
-KLU_CFLAGS="-I\$(top_builddir)/KLU/Include"
+KLU_CFLAGS="-I\$(top_srcdir)/KLU/Include"
 KLU_LIBS="\$(top_builddir)/KLU/Source/libklu.la"
 AC_SUBST(KLU_CFLAGS)
 AC_SUBST(KLU_LIBS)

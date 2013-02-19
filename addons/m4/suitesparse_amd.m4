@@ -32,7 +32,7 @@ AC_CONFIG_FILES([AMD/Demo/Makefile
                  AMD/Makefile])
 
 		 
-AMD_CFLAGS="-I\$(top_builddir)/AMD/Include"
+AMD_CFLAGS="-I\$(top_srcdir)/AMD/Include"
 AMD_LIBS="\$(top_builddir)/AMD/Source/libamd.la"
 AC_SUBST(AMD_CFLAGS)
 AC_SUBST(AMD_LIBS)

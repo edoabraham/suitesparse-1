@@ -168,7 +168,7 @@ AC_CONFIG_FILES([CHOLMOD/Check/Makefile
 		 CHOLMOD/cholmod.pc
                  CHOLMOD/Makefile])
 		 
-CHOLMOD_CFLAGS="-I\$(top_builddir)/CHOLMOD/Include"
+CHOLMOD_CFLAGS="-I\$(top_srcdir)/CHOLMOD/Include"
 CHOLMOD_LIBS="\$(top_builddir)/CHOLMOD/libcholmod.la"
 AC_SUBST(CHOLMOD_CFLAGS)
 AC_SUBST(CHOLMOD_LIBS)

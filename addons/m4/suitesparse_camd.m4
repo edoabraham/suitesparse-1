@@ -16,7 +16,7 @@ AC_CONFIG_FILES([CAMD/Demo/Makefile
                  CAMD/camd.pc
                  CAMD/Makefile])
 		 
-CAMD_CFLAGS="-I\$(top_builddir)/CAMD/Include"
+CAMD_CFLAGS="-I\$(top_srcdir)/CAMD/Include"
 CAMD_LIBS="\$(top_builddir)/CAMD/Source/libcamd.la"
 AC_SUBST(CAMD_CFLAGS)
 AC_SUBST(CAMD_LIBS)

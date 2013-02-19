@@ -16,7 +16,7 @@ AC_CONFIG_FILES([COLAMD/Demo/Makefile
                  COLAMD/colamd.pc
                  COLAMD/Makefile])
 		 
-COLAMD_CFLAGS="-I\$(top_builddir)/COLAMD/Include"
+COLAMD_CFLAGS="-I\$(top_srcdir)/COLAMD/Include"
 COLAMD_LIBS="\$(top_builddir)/COLAMD/Source/libcolamd.la"
 AC_SUBST(COLAMD_CFLAGS)
 AC_SUBST(COLAMD_LIBS)
