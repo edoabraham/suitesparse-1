@@ -1,6 +1,8 @@
 
 UserGuide.pdf:
-	$(LN_S) $(srcdir)/UserGuide.bib .
+	if (test "$(srcdir)" != "$(builddir)") ; then \
+           $(AM_GEN)rm -f *.{tex,bib} && $(LN_S)$(srcdir)/*.{tex,bib} . ;\
+        fi
 	$(SED) -f $(srcdir)/UserGuide.sed1 < $(srcdir)/UserGuide.stex | \
 	$(SED) -f $(srcdir)/UserGuide.sed2 | $(EXPAND) -8 > UserGuide.tex
 	$(PDFLATEX) UserGuide
@@ -9,7 +11,9 @@ UserGuide.pdf:
 	$(PDFLATEX) UserGuide
 
 QuickStart.pdf:
-	$(LN_S) $(srcdir)/QuickStart.tex .
+	if (test "$(srcdir)" != "$(builddir)") ; then \
+           $(AM_GEN)rm -f *.{tex,bib} && $(LN_S)$(srcdir)/*.{tex,bib} . ;\
+        fi
 	$(PDFLATEX) QuickStart
 	$(PDFLATEX) QuickStart
 

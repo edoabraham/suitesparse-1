@@ -1,6 +1,8 @@
 
 spqr_user_guide.pdf:
-	ln -s $(srcdir)/*.{tex,bib} .
+	if (test "$(srcdir)" != "$(builddir)") ; then \
+           $(AM_GEN)rm -f *.{tex,bib} && $(LN_S)$(srcdir)/*.{tex,bib} . ;\
+        fi
 	$(PDFLATEX) spqr_user_guide
 	$(BIBTEX) spqr_user_guide
 	$(PDFLATEX) spqr_user_guide
@@ -11,7 +13,7 @@ doc_DATA = ChangeLog
 if BUILD_DOCS
 pdf-local: spqr_user_guide.pdf
 all-local: pdf-local
-doc_DATA += spqr_user_guide.pdf spqr.pdf algo_spqr.pdf
+doc_DATA += spqr_user_guide.pdf
 endif
 
 EXTRA_DIST = gpl.txt README.txt spqr_user_guide.tex spqr_user_guide.bib \

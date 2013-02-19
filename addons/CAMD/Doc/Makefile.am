@@ -1,9 +1,11 @@
 
 CAMD_UserGuide.pdf:
+	if (test "$(srcdir)" != "$(builddir)") ; then \
+           $(AM_GEN)rm -f *.{tex,bib} && $(LN_S)$(srcdir)/*.{tex,bib} . ;\
+        fi
 	echo '\begin{verbatim}' > camd_h.tex
 	expand -8 $(srcdir)/../Include/camd.h >> camd_h.tex
 	echo '\end{verbatim}' >> camd_h.tex
-	ln -s $(srcdir)/*.{tex,bib} .
 	$(PDFLATEX) CAMD_UserGuide
 	$(BIBTEX)  CAMD_UserGuide
 	$(PDFLATEX) CAMD_UserGuide

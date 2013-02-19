@@ -1,11 +1,11 @@
 
 AMD_UserGuide.pdf:
+	if (test "$(srcdir)" != "$(builddir)") ; then \
+           $(AM_GEN)rm -f *.{tex,bib} && $(LN_S)$(srcdir)/*.{tex,bib} . ;\
+        fi
 	echo '\begin{verbatim}' > amd_h.tex
 	expand -8 $(srcdir)/../Include/amd.h >> amd_h.tex
 	echo '\end{verbatim}' >> amd_h.tex
-	if (test "$(srcdir)" != "$(builddir)") ; then \
-           $(LN_S)$(srcdir)/*.{tex,bib} . ;\
-        fi
 	$(PDFLATEX) AMD_UserGuide
 	$(BIBTEX)  AMD_UserGuide
 	$(PDFLATEX) AMD_UserGuide

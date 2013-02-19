@@ -1,6 +1,8 @@
 
 ldl_userguide.pdf:
-	ln -s $(srcdir)/*.{tex,bib} .
+	if (test "$(srcdir)" != "$(builddir)") ; then \
+           $(AM_GEN)rm -f *.{tex,bib} && $(LN_S)$(srcdir)/*.{tex,bib} . ;\
+        fi
 	$(PDFLATEX) ldl_userguide
 	$(BIBTEX)  ldl_userguide
 	$(PDFLATEX) ldl_userguide
