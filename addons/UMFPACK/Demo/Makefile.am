@@ -95,4 +95,5 @@ check-am: $(check_PROGRAMS)
 endif
 
 MAINTAINERCLEANFILES = Makefile.in
-CLEANFILES = my_*.$(ext) tmp/* tmp umfpack_??_demo.* *.umf
+#CLEANFILES = my_*.$(ext) tmp/* tmp umfpack_??_demo.* *.umf
+CLEANFILES = my_*.$(ext) tmp/* tmp *.umf

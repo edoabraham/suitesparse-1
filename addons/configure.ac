@@ -10,7 +10,7 @@ AM_INIT_AUTOMAKE([dist-bzip2 foreign])
 # use silent rules if available - automake 1.11
 m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES(yes)])
 
-LT_INIT
+LT_INIT([disable-static])
 AC_PROG_CC
 
 AC_LANG([C])

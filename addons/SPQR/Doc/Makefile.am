@@ -19,5 +19,5 @@ endif
 EXTRA_DIST = gpl.txt README.txt spqr_user_guide.tex spqr_user_guide.bib \
 	spqr.pdf algo_spqr.pdf
 
-CLEANFILES = *.aux *.bbl *.blg *.log *.toc *.pdf *.out
+CLEANFILES = *.aux *.bbl *.blg *.log *.toc *.out spqr_user_guide.pdf
 MAINTAINERCLEANFILES = Makefile.in
