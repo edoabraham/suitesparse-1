@@ -12,7 +12,7 @@ m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES(yes)])
 
 LT_INIT([disable-static])
 AC_PROG_CC
-
+AC_PROG_CXX
 AC_LANG([C])
 
 # Optional documentation

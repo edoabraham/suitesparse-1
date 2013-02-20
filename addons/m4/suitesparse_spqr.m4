@@ -1,7 +1,7 @@
 AC_DEFUN([SUITESPARSE_SPQR],
 [
-AC_PROG_CXX
 AC_LANG_PUSH([C++])
+AC_PROG_CXX
 # Checks for header files.
 AC_CHECK_HEADERS([float.h string.h stdlib.h])
 
