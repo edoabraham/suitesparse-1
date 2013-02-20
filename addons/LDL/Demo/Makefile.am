@@ -25,7 +25,7 @@ EXTRA_DIST = $(addsuffix $(ext),$(basename $(check_PROGRAMS))) ldlamd$(ext) ldll
 
 
 check-local: $(check_PROGRAMS)
-	[ "$(srcdir)" = "$(builddir)" ] || rm -rf ../Matrix && cp -r $(srcdir)/../Matrix ..
+	[ "$(srcdir)" = "$(builddir)" ] || cp -r $(srcdir)/../Matrix ..
 	@for i in $(basename $(check_PROGRAMS)); do \
 		echo "------------------------" ; \
 		./$$i$(EXEEXT) > my_$$i$(ext); \
@@ -41,6 +41,7 @@ check-local: $(check_PROGRAMS)
 	if test "x$$doexit" = "xyes"; then \
 		exit 1; \
 	fi
+	[ "$(srcdir)" = "$(builddir)" ] || chmod -R u+rwX ../Matrix
 	[ "$(srcdir)" = "$(builddir)" ] || rm -rf ../Matrix
 
 MAINTAINERCLEANFILES = Makefile.in
